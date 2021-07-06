@@ -1,0 +1,5 @@
+list = [1]
+for i in range(2,300):
+    list.insert(i,i)
+
+print(list)
