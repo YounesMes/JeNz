@@ -1,0 +1,15 @@
+import math
+# List contain all numbers between 1 & 299
+list = [1]
+for i in range(2,300):
+    list.insert(i,i)
+print(list)
+# Lenght and squared values
+print("The lenght of the list is " + str(len(list)))
+print("The squared values in the list are :")
+for number in list :
+    if math.sqrt(number)== int(math.sqrt(number)):
+        print(number)
+    else :continue
+# checking if 57 is in the list
+print(57 in list)
