@@ -1,0 +1,25 @@
+#read the file in one varible "A"
+A = open("student_names","r")
+print(A.read())
+#read the first line
+A = open("student_names","r")
+print("The first line is :"+ A.readline())
+#read the last line
+print("The last line is :"+ A.readlines()[2])
+#checking a name
+A = open("student_names","r")
+C = A.readlines()
+print(C)
+for name in C:
+    if name == "Younes El Mestari\n" :
+        print("The name is available")
+        break
+    else :
+        print("not found")
+        break
+A.close()
+
+#Generator of files
+files =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+for letter in files:
+    D = open(letter + ".txt","w")
