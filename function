@@ -1,0 +1,97 @@
+#Palindrom task :
+A= input("enter a name")
+print(A)
+def isPalindrome(string):
+    left_pos = 0
+    right_pos = len(string) - 1
+
+    while right_pos >= left_pos:
+        if not string[left_pos] == string[right_pos]:
+            return False
+        left_pos += 1
+        right_pos -= 1
+    return True
+print(isPalindrome(A))
+
+
+
+#Prime number :
+rom math import sqrt
+B = int(input("enter a number"))
+def Primenumber(number1):
+    for number in range(2,number1):
+        if  number1 % number == 0:
+         return print("The number is not prime")
+    else: print("The number is prime")
+
+
+print(Primenumber(B))
+
+
+
+#Task 3 :
+C=int(input("choose a number"))
+def checking(C):
+    if C in range(1,9,1):
+        return print(format(C) + " is the range selected  " )
+    else:
+         print("The number is outside the given range.")
+print(checking(C))
+
+
+
+#Task 4 : factorial of a number
+A = int(input("Select a number"))
+def factorial(A,F=1):
+    for number in range(1,A+1):
+        F = F*number
+    return F
+
+print(" The factorial of " + str(A) + " is :" +format(factorial(A)))
+
+
+
+
+#Task 5 : reverse a string
+A= input("write a string")
+def reverse(A):
+    C=''
+    i=len(A)
+    while i > 0:
+        C=C+A[i-1]
+        i= i-1
+    return C
+print(reverse(A))
+
+
+
+#Task 6: sum all the numbers
+list1 =[0]
+K= int(input("Enter the size of the list"))
+for i in range(1,K+1,1):
+    C=int(input("select a number"))
+    list1.insert(i,C)
+print(list1)
+list2 =[1,2]
+def sum(numbers):
+    total = 0
+    for x in numbers:
+        total += x
+    return total
+print(sum(list1))
+
+
+#Task 7 :
+list = []
+for i in range(1,4):
+    C=int(input("select a number"))
+    list.insert(i,C)
+print(list)
+def max1(listA):
+    Max = listA[0]
+    for y in listA:
+        if y>Max :
+            Max=y
+    return Max
+
+print(max1(list))
