@@ -1,0 +1,31 @@
+# task for class : Rectangle
+class Rectangle :
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    def computearea(self):
+        return self.width*self.length
+rectangle1 = Rectangle(13,5)
+print("The area is " + format(rectangle1.computearea()))
+
+
+#Vehicule class
+class Vehicule :
+    def __init__(self,name,max_speed,mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+
+
+#Vehicule class without any variable or methods :
+class Vehicle:
+   pass
+
+
+#Child class bus
+class childbus(Vehicule):
+    pass
+
+Bus1 = childbus("ES school",100,12)
+print("Name: ",Bus1.name, "max speed : ",Bus1.max_speed, "Mileage: ",Bus1.mileage)
