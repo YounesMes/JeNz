@@ -1,0 +1,13 @@
+#Task 8 : Exceptions
+a = 12
+s = "hello"
+try :
+    # print("inside the try")
+    print(a+ s)
+    # print("printed using the originale data type")
+except TypeError:
+    # print("inside the except")
+    # print(str(a) + s)
+     print("printed using the data-casted data type")
+except ValueError:
+    print("You can not convert an name to int")
